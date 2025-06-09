@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Private Chef | Chefs</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="assets/images/bison-logo.png" />
+  <style>
+    body {
+      background-color: #0b0b0b;
+    }
+
+    nav {
+      background-color: #111;
+      padding: 1em 2em;
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      font-size: 1rem;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #fdfdfd;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #d4af37;
+    }
+
+    main {
+      padding: 8em 2em 4em;
+      max-width: 1400px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.8rem;
+      margin-bottom: 3rem;
+      color: #fff;
+      letter-spacing: 1px;
+    }
+
+    .chef-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .chef-card {
+      background-color: #111;
+      border: 1px solid #333;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      padding-bottom: 1.5rem;
+    }
+
+    .chef-card img {
+      width: 100%;
+      height: 100%;
+      max-height: 480px;
+      object-fit: cover;
+    }
+
+    .chef-card h3 {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+      color: #d4af37;
+    }
+
+    .chef-card p {
+      padding: 0 1.5rem;
+      color: #ccc;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="story.html">Story</a>
+    <a href="farms.html">Farms</a>
+    <a href="chefs.html">Chefs</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <h1>Meet the Chefs</h1>
+    <div class="chef-grid">
+      <div class="chef-card">
+        <img src="assets/images/lilo.jpg" alt="Lilo Felix">
+        <h3>Lilo Felix</h3>
+        <p>Founder & Executive Chef. Passionate about local sourcing and crafting unforgettable culinary experiences rooted in tradition.</p>
+      </div>
+      <div class="chef-card">
+        <img src="assets/images/partners_1.jpg" alt="Chef Partner">
+        <h3>Chef Partner</h3>
+        <p>Background in fine dining and hospitality. Specializes in sustainable menu design and kitchen leadership.</p>
+      </div>
+      <div class="chef-card">
+        <img src="assets/images/partners_2.jpg" alt="Chef Partner">
+        <h3>Chef Partner</h3>
+        <p>Farm-to-table culinary expert with deep connections to regional producers and artisanal food systems.</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

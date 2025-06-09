@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Private Chef | Story</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="assets/images/bison-logo.png" />
+  <style>
+    body {
+      background-color: #0b0b0b;
+    }
+
+    nav {
+      background-color: #111;
+      padding: 1em 2em;
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      font-size: 1rem;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #fdfdfd;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #d4af37;
+    }
+
+    main {
+      padding: 8em 2em 4em;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.8rem;
+      margin-bottom: 3rem;
+      color: #fff;
+      letter-spacing: 1px;
+    }
+
+    .story-columns {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .story-section {
+      flex: 1;
+      background-color: #111;
+      padding: 3rem 2rem;
+      border-radius: 8px;
+      border-top: 4px solid #d4af37;
+      transition: background 0.3s;
+      color: #e0e0e0;
+    }
+
+    .story-section:hover {
+      background-color: #1a1a1a;
+    }
+
+    .story-section h2 {
+      font-size: 2rem;
+      color: #d4af37;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .story-section h3 {
+      font-size: 1.3rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #fdfdfd;
+      position: relative;
+    }
+
+    .story-section h3::before {
+      content: "→ ";
+      color: #d4af37;
+      font-weight: bold;
+      margin-right: 6px;
+    }
+
+    .story-section p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 1.2rem;
+    }
+
+    @media (max-width: 900px) {
+      .story-columns {
+        flex-direction: column;
+      }
+      .story-section h2 {
+        font-size: 1.5rem;
+      }
+      .story-section h3 {
+        font-size: 1.1rem;
+      }
+      .story-section p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="story.html">Story</a>
+    <a href="farms.html">Farms</a>
+    <a href="chefs.html">Chefs</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <h1>Our Story</h1>
+    <div class="story-columns">
+      <section class="story-section">
+        <h2>What We're About</h2>
+        <h3>Real Food Crafted with Expertise</h3>
+        <p>We believe in honoring the craft of cooking — everything is made from scratch, inspired by the seasons, and rooted in technique.</p>
+
+        <h3>Founder: Lilo Felix</h3>
+        <p>Chef and creator, Lilo Felix envisioned a platform that restores integrity to the culinary process and reconnects chefs with real ingredients and real people.</p>
+
+        <h3>COO / Partners</h3>
+        <p>With backgrounds in hospitality, wellness, and regenerative agriculture, our partners are mission-driven professionals committed to culinary and operational excellence.</p>
+
+        <h3>Experience & Background</h3>
+        <p>We bring together a network of chefs and collaborators whose collective resumes span private dining, sustainable sourcing, and cultural cuisine from around the globe.</p>
+      </section>
+
+      <section class="story-section">
+        <h2>Why We're Doing This</h2>
+        <h3>Beneficial Service to All Involved</h3>
+        <p>Our model works because it centers real value: better meals, direct relationships, and pride of work for chefs, farmers, and clients alike.</p>
+
+        <h3>Keep Food Production Local, Not Industrial</h3>
+        <p>We reject the soulless scale of mass production. Every ingredient is sourced locally to support clean, resilient food systems.</p>
+
+        <h3>Real Local Farmers Supported Directly</h3>
+        <p>We don't just buy local — we collaborate directly with farmers, ensuring transparency, sustainability, and fair compensation.</p>
+
+        <h3>Local Chefs Given Opportunity</h3>
+        <p>We provide chefs with real creative freedom, career stability, and a chance to showcase their craft within their own communities.</p>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

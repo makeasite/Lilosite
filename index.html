@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Private Chef | Home</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="assets/images/bison-logo.png" />
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="story.html">Story</a>
+    <a href="farms.html">Farms</a>
+    <a href="chefs.html">Chefs</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <div class="hero">
+      <div class="logo-container">
+        <img src="assets/images/bison-logo.png" alt="Bison Logo" id="bisonLogo" />
+      </div>
+      <div class="intro-text">
+        <h1>Private Chef Services with Purpose</h1>
+        <p>Locally sourced. Intimately served. Crafted by culinary artists with integrity.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="socials">
+    <a href="#">Instagram</a>
+    <a href="#">Facebook</a>
+    <a href="#">Booksy</a>
+  </div>
+
+  <script>
+    const logo = document.getElementById('bisonLogo');
+    document.addEventListener('mousemove', (e) => {
+      const xOffset = (e.clientX - window.innerWidth / 2) * 0.05;
+      const yOffset = (e.clientY - window.innerHeight / 2) * 0.05;
+      logo.style.transform = `translate(${xOffset}px, ${yOffset}px)`;
+    });
+  </script>
+</body>
+</html>

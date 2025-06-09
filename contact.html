@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Private Chef | Contact</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="assets/images/bison-logo.png" />
+  <style>
+    body {
+      background-color: #0b0b0b;
+    }
+
+    nav {
+      background-color: #111;
+      padding: 1em 2em;
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      font-size: 1rem;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #fdfdfd;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #d4af37;
+    }
+
+    main {
+      padding: 8em 2em 4em;
+      max-width: 800px;
+      margin: auto;
+      color: #fdfdfd;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.8rem;
+      margin-bottom: 3rem;
+      color: #fff;
+      letter-spacing: 1px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      border-radius: 10px;
+      margin-bottom: 4rem;
+    }
+
+    form {
+      background: #111;
+      padding: 2rem;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input, textarea, select {
+      padding: 1rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    button {
+      background: #d4af37;
+      border: none;
+      padding: 1rem;
+      font-size: 1rem;
+      color: #000;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #e0c157;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="story.html">Story</a>
+    <a href="farms.html">Farms</a>
+    <a href="chefs.html">Chefs</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <div style="display: flex; flex-wrap: wrap; gap: 3rem; justify-content: space-between;">
+      <div style="flex: 1 1 45%; min-width: 320px;">
+        <h1 style="font-size: 2.4rem; margin-bottom: 1rem; color: #fff; text-align: center;">Contact Chef Lilo or Start Meal Prep</h1>
+        <h2 style="font-size: 1.5rem; color: #d4af37; text-align: center; margin-bottom: 1rem;">Schedule a Call with Chef Lilo</h2>
+        <script src='https://square.site/appointments/buyer/widget/n6e5awn97qg18u/LAHH0TJZ9TRD9.js'></script>
+      </div>
+      <div style="flex: 1 1 45%; min-width: 320px;">
+        <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: #d4af37; text-align: center;">Start Your Weekly Meal Plan</h2>
+        <form action="mailto:bisonsite@myyahoo.com" method="post" enctype="text/plain">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <label for="meals">Number of Meals Per Week:</label>
+          <select name="meals" id="meals" required>
+            <option value="">Select</option>
+            <option value="3">3 Meals</option>
+            <option value="4">4 Meals</option>
+            <option value="5">5 Meals</option>
+            <option value="6">6 Meals</option>
+            <option value="7">7 Meals</option>
+          </select>
+          <label for="farm">Preferred Farm Source:</label>
+          <select name="farm" id="farm" required>
+            <option value="">Select a Farm</option>
+            <option value="vernon">Vernon Family Farm</option>
+            <option value="alta">Alta Vista Farm</option>
+            <option value="brookdale">Brookdale Farm</option>
+            <option value="jasper">Jasper Hill Farm</option>
+          </select>
+          <textarea name="message" rows="6" placeholder="Tell us what you’re looking for — dietary needs, preferences, schedule, etc."></textarea>
+          <button type="submit">Submit Request</button>
+        </form>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
